@@ -4,4 +4,4 @@
 
 - [x] 2. Setup script testing (Vitest/Jest) dan linter di package.json.
 
-- [ ] 3. Buat komponen Navbar dan Landing Page sederhana.
+- [x] 3. Buat komponen Navbar dan Landing Page sederhana.

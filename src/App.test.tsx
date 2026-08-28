@@ -3,8 +3,14 @@ import { describe, expect, it } from 'vitest'
 import App from './App.tsx'
 
 describe('App', () => {
-  it('renders the Vite starter heading', () => {
+  it('renders the Navbar and Landing Page together', () => {
     render(<App />)
-    expect(screen.getByRole('heading', { name: /get started/i })).toBeInTheDocument()
+
+    expect(
+      screen.getByRole('navigation', { name: /main navigation/i }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', { name: /welcome to test automation/i }),
+    ).toBeInTheDocument()
   })
 })
